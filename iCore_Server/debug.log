@@ -1,0 +1,210 @@
+<object-stream>
+<org.drools.audit.event.RuleFlowLogEvent>
+  <type>8</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+</org.drools.audit.event.RuleFlowLogEvent>
+<org.drools.audit.event.RuleFlowNodeLogEvent>
+  <type>24</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+  <nodeId>1</nodeId>
+  <nodeName>Start</nodeName>
+  <nodeInstanceId>0</nodeInstanceId>
+</org.drools.audit.event.RuleFlowNodeLogEvent>
+<org.drools.audit.event.RuleFlowNodeLogEvent>
+  <type>26</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+  <nodeId>1</nodeId>
+  <nodeName>Start</nodeName>
+  <nodeInstanceId>0</nodeInstanceId>
+</org.drools.audit.event.RuleFlowNodeLogEvent>
+<org.drools.audit.event.RuleFlowNodeLogEvent>
+  <type>24</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+  <nodeId>3</nodeId>
+  <nodeName>SE_VO</nodeName>
+  <nodeInstanceId>1</nodeInstanceId>
+</org.drools.audit.event.RuleFlowNodeLogEvent>
+<org.drools.audit.event.RuleFlowGroupLogEvent>
+  <type>12</type>
+  <groupName>vo_execution</groupName>
+  <size>0</size>
+</org.drools.audit.event.RuleFlowGroupLogEvent>
+<org.drools.audit.event.RuleFlowGroupLogEvent>
+  <type>13</type>
+  <groupName>vo_execution</groupName>
+  <size>0</size>
+</org.drools.audit.event.RuleFlowGroupLogEvent>
+<org.drools.audit.event.RuleFlowNodeLogEvent>
+  <type>25</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+  <nodeId>3</nodeId>
+  <nodeName>SE_VO</nodeName>
+  <nodeInstanceId>1</nodeInstanceId>
+</org.drools.audit.event.RuleFlowNodeLogEvent>
+<org.drools.audit.event.RuleFlowNodeLogEvent>
+  <type>27</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+  <nodeId>1</nodeId>
+  <nodeName>Start</nodeName>
+  <nodeInstanceId>0</nodeInstanceId>
+</org.drools.audit.event.RuleFlowNodeLogEvent>
+<org.drools.audit.event.RuleFlowNodeLogEvent>
+  <type>25</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+  <nodeId>1</nodeId>
+  <nodeName>Start</nodeName>
+  <nodeInstanceId>0</nodeInstanceId>
+</org.drools.audit.event.RuleFlowNodeLogEvent>
+<org.drools.audit.event.RuleFlowLogEvent>
+  <type>9</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+</org.drools.audit.event.RuleFlowLogEvent>
+<org.drools.audit.event.RuleFlowGroupLogEvent>
+  <type>14</type>
+  <groupName>vo_execution</groupName>
+  <size>0</size>
+</org.drools.audit.event.RuleFlowGroupLogEvent>
+<org.drools.audit.event.RuleFlowGroupLogEvent>
+  <type>15</type>
+  <groupName>vo_execution</groupName>
+  <size>0</size>
+</org.drools.audit.event.RuleFlowGroupLogEvent>
+<org.drools.audit.event.RuleFlowNodeLogEvent>
+  <type>26</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+  <nodeId>3</nodeId>
+  <nodeName>SE_VO</nodeName>
+  <nodeInstanceId>1</nodeInstanceId>
+</org.drools.audit.event.RuleFlowNodeLogEvent>
+<org.drools.audit.event.RuleFlowNodeLogEvent>
+  <type>24</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+  <nodeId>15</nodeId>
+  <nodeName>SE_CVO</nodeName>
+  <nodeInstanceId>2</nodeInstanceId>
+</org.drools.audit.event.RuleFlowNodeLogEvent>
+<org.drools.audit.event.RuleFlowGroupLogEvent>
+  <type>12</type>
+  <groupName>cvo_execution</groupName>
+  <size>0</size>
+</org.drools.audit.event.RuleFlowGroupLogEvent>
+<org.drools.audit.event.RuleFlowGroupLogEvent>
+  <type>13</type>
+  <groupName>cvo_execution</groupName>
+  <size>0</size>
+</org.drools.audit.event.RuleFlowGroupLogEvent>
+<org.drools.audit.event.RuleFlowNodeLogEvent>
+  <type>25</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+  <nodeId>15</nodeId>
+  <nodeName>SE_CVO</nodeName>
+  <nodeInstanceId>2</nodeInstanceId>
+</org.drools.audit.event.RuleFlowNodeLogEvent>
+<org.drools.audit.event.RuleFlowNodeLogEvent>
+  <type>27</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+  <nodeId>3</nodeId>
+  <nodeName>SE_VO</nodeName>
+  <nodeInstanceId>1</nodeInstanceId>
+</org.drools.audit.event.RuleFlowNodeLogEvent>
+<org.drools.audit.event.RuleFlowGroupLogEvent>
+  <type>14</type>
+  <groupName>cvo_execution</groupName>
+  <size>0</size>
+</org.drools.audit.event.RuleFlowGroupLogEvent>
+<org.drools.audit.event.RuleFlowGroupLogEvent>
+  <type>15</type>
+  <groupName>cvo_execution</groupName>
+  <size>0</size>
+</org.drools.audit.event.RuleFlowGroupLogEvent>
+<org.drools.audit.event.RuleFlowNodeLogEvent>
+  <type>26</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+  <nodeId>15</nodeId>
+  <nodeName>SE_CVO</nodeName>
+  <nodeInstanceId>2</nodeInstanceId>
+</org.drools.audit.event.RuleFlowNodeLogEvent>
+<org.drools.audit.event.RuleFlowNodeLogEvent>
+  <type>24</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+  <nodeId>13</nodeId>
+  <nodeName>End</nodeName>
+  <nodeInstanceId>3</nodeInstanceId>
+</org.drools.audit.event.RuleFlowNodeLogEvent>
+<org.drools.audit.event.RuleFlowNodeLogEvent>
+  <type>26</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+  <nodeId>13</nodeId>
+  <nodeName>End</nodeName>
+  <nodeInstanceId>3</nodeInstanceId>
+</org.drools.audit.event.RuleFlowNodeLogEvent>
+<org.drools.audit.event.RuleFlowLogEvent>
+  <type>10</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+</org.drools.audit.event.RuleFlowLogEvent>
+<org.drools.audit.event.RuleFlowLogEvent>
+  <type>11</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+</org.drools.audit.event.RuleFlowLogEvent>
+<org.drools.audit.event.RuleFlowNodeLogEvent>
+  <type>27</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+  <nodeId>13</nodeId>
+  <nodeName>End</nodeName>
+  <nodeInstanceId>3</nodeInstanceId>
+</org.drools.audit.event.RuleFlowNodeLogEvent>
+<org.drools.audit.event.RuleFlowNodeLogEvent>
+  <type>25</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+  <nodeId>13</nodeId>
+  <nodeName>End</nodeName>
+  <nodeInstanceId>3</nodeInstanceId>
+</org.drools.audit.event.RuleFlowNodeLogEvent>
+<org.drools.audit.event.RuleFlowNodeLogEvent>
+  <type>27</type>
+  <processId>iCore.STemplates.Locate</processId>
+  <processName>Locate</processName>
+  <processInstanceId>1</processInstanceId>
+  <nodeId>15</nodeId>
+  <nodeName>SE_CVO</nodeName>
+  <nodeInstanceId>2</nodeInstanceId>
+</org.drools.audit.event.RuleFlowNodeLogEvent>
+</object-stream>
