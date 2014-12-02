@@ -1,0 +1,56 @@
+//created on: 04-Jun-2014
+package iCore.FunctionalModules
+
+//list any import classes here.
+import java.lang.reflect.Method;
+import iCore.CVOTemplates.CVOT_Config
+import iCore.CVO.Service_config
+import java.util.List;
+import iCore.CVOTemplates.Trace_CVOT
+import iCore.CVOTemplates.Locate_CVOT;
+import iCore.CVOTemplates.Maintenance_CVOT;
+
+//import globals
+
+
+rule VO_Execute
+  ruleflow-group "vo_execution"
+  dialect "java"
+  when  
+  	$r : CVOT_Config()  	 			  
+  then
+  
+      //  System.out.println("....VO_Execution....Publish/Subscribe on Topics");
+end
+
+
+rule CVO_Execute
+  ruleflow-group "cvo_execution"
+  dialect "java"
+  when   			  
+    $r : CVOT_Config()  	 			  
+    m : Service_config( CVOName == $r.getCVOName())           
+  then
+ 	List<String> CVOs;
+ 	CVOs = m.getCVO();
+ 	String topic=null;
+ 	
+ 	if(CVOs.get(0).equals("Trace"))
+ 	{
+ 		Trace_CVOT cvot = new Trace_CVOT();
+  		cvot.execute(m.getVOName());
+  	}
+  	else if(CVOs.get(0).equals("Locate"))
+ 	{
+ 		Locate_CVOT cvot = new Locate_CVOT();
+  		cvot.execute(m.getVOName());  		
+  	}	  
+  	
+  	else if(CVOs.get(0).equals("Maintenance"))
+  	{
+  		Maintenance_CVOT cvot = new Maintenance_CVOT();
+  		cvot.execute(m.getVOName());
+  	
+  	}
+
+end

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<process xmlns="http://drools.org/drools-5.0/process"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+         xs:schemaLocation="http://drools.org/drools-5.0/process drools-processes-5.0.xsd"
+         type="RuleFlow" name="Track" id="iCore.STemplates.Locate" package-name="iCore.STemplates" >
+
+  <header>
+    <globals>
+      <global identifier="list_VOs" type="java.util.List" />
+      <global identifier="flag" type="Integer" />
+      <global identifier="VO" type="String" />
+      <global identifier="list_CVOs" type="java.util.List" />
+      <global identifier="CVO" type="String" />
+    </globals>
+    <variables>
+      <variable name="flag" >
+        <type name="org.drools.process.core.datatype.impl.type.IntegerDataType" />
+      </variable>
+      <variable name="VO" >
+        <type name="org.drools.process.core.datatype.impl.type.StringDataType" />
+      </variable>
+      <variable name="CVO" >
+        <type name="org.drools.process.core.datatype.impl.type.StringDataType" />
+      </variable>
+    </variables>
+  </header>
+
+  <nodes>
+    <start id="1" name="Start" x="16" y="56" width="80" height="48" />
+    <ruleSet id="3" name="SE_VO" x="209" y="16" width="100" height="48" ruleFlowGroup="vo_execution" />
+    <split id="5" name="Gateway" x="128" y="56" width="49" height="49" type="3" >
+      <constraints>
+        <constraint toNodeId="12" toType="DROOLS_DEFAULT" priority="1" type="code" dialect="java" >if(flag == 1)
+ return true;
+else
+	return false;</constraint>
+        <constraint toNodeId="3" toType="DROOLS_DEFAULT" priority="1" type="code" dialect="java" >if(flag != 1)
+ return true;
+else
+	return false;</constraint>
+      </constraints>
+    </split>
+    <join id="9" name="Gateway" x="453" y="56" width="49" height="49" type="3" />
+    <actionNode id="12" name="SRA_VO" x="209" y="96" width="100" height="48" >
+        <action type="expression" dialect="mvel" >kcontext.getKnowledgeRuntime().setGlobal("VO","ObjectX");
+list_VOs.add("Object_ID1");</action>
+    </actionNode>
+    <end id="13" name="End" x="534" y="56" width="48" height="48" />
+    <actionNode id="14" name="SRA_CVO" x="341" y="96" width="80" height="48" >
+        <action type="expression" dialect="mvel" >kcontext.getKnowledgeRuntime().setGlobal("CVO","Track");
+list_CVOs.add("Track");</action>
+    </actionNode>
+    <ruleSet id="15" name="SE_CVO" x="341" y="16" width="80" height="48" ruleFlowGroup="cvo_execution" />
+  </nodes>
+
+  <connections>
+    <connection from="5" to="3" />
+    <connection from="1" to="5" />
+    <connection from="14" to="9" />
+    <connection from="15" to="9" />
+    <connection from="5" to="12" />
+    <connection from="9" to="13" />
+    <connection from="12" to="14" />
+    <connection from="3" to="15" />
+  </connections>
+
+</process>
